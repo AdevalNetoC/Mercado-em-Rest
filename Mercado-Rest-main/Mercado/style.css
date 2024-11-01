@@ -66,11 +66,18 @@ h2 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+    min-height: 250px; /* Define uma altura mínima para a card */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: space-between; /* Espaça os itens uniformemente */
 }
 
 .product-card img {
-    width: 100%;
+    width: 150px;
+    height: 100px;
     border-radius: 5px;
+    align-self: center; /* Centraliza a imagem horizontalmente */
 }
 
 .product-card h3 {
@@ -95,12 +102,12 @@ h2 {
     padding: 10px 15px; /* Espaçamento interno */
     cursor: pointer; /* Cursor de mão ao passar o mouse */
     transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+    margin-top: auto; /* Empurra o botão para o fundo da card */
 }
 
 .product-card button:hover {
     background-color: #1b4d0a; /* Cor de fundo mais escura ao passar o mouse */
 }
-
 /* Estilos do rodapé */
 footer {
     background-color: #246814;
