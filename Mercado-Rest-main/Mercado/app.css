@@ -1,0 +1,37 @@
+/* App.css */
+.container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .produto-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .produto-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .add-produto-form {
+    margin-top: 20px;
+  }
+  
+  .add-produto-form input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .add-produto-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,153 @@
+/* Estilos gerais para centralizar o conteúdo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #E9EFEF;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do contêiner de login */
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Título da página de login */
+.login-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos dos inputs */
+.login-container input[type="text"],
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilos do botão de login */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #542E71;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos do contêiner de recuperação de senha */
+.recovery-container {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.recovery-container h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.recovery-container p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.recovery-container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.recovery-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #542E71;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.recovery-container button:hover {
+    background-color: #45a049;
+}
+
+.recovery-container .back-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #6A66A3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.recovery-container .back-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do link para recuperar senha na página de login */
+.forgot-password-link {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 1px;
+    color: #6A66A3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilização da logo */
+.login-logo {
+    display: flex;
+    max-width: 100%;  
+    height: auto;  
+    flex-direction: column;  /* Organiza os filhos em uma coluna */
+    align-items: center;     /* Centraliza os itens horizontalmente */
+    width: 300px;           /* Defina a largura do contêiner */
+    border-radius: 8px;
+    text-align: center; ;
+}
+
+.login-logo {
+    display: block;       /* Para que a imagem seja tratada como um bloco */
+    margin:  auto;      /* Margens automáticas para centralizar horizontalmente */
+    max-width: 100%;     /* A imagem ocupará no máximo 100% da largura do contêiner */
+    height: auto;        /* A altura será ajustada automaticamente para manter a proporção */
+}   
+
+
+
+
