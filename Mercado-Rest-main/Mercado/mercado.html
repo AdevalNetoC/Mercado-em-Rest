@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercado Bakana</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
-        <div className="App">
-            <header>
-              <h1>Supermercado Bakana</h1>
-              <nav>
+        <div class="App">
+            <h1>Supermercado Bakana</h1>
+            <nav>
                 <ul>
-                  <li><a href="#">Início</a></li>
-                  <li><a href="#">Perfil</a></li>
-                  <li><a href="../Usuarios/usuarios.html">Usuários</a></li>
-                  <li><a href="../Login e recuperar senha/login.html">Sair</a></li>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Perfil</a></li>
+                    <li><a href="../Usuarios/usuarios.html">Usuários</a></li>
+                    <li><a href="../Login e recuperar senha/login.html">Sair</a></li>
                 </ul>
-              </nav>
-            </header>
-            <main>
-              <ListaProdutos />
-            </main>
+            </nav>
         </div>    
     </header>
 
@@ -33,32 +28,31 @@
                 <div class="product-card">
                     <img src="../Imagens/Maconha.webp" alt="Ervinha da boa">
                     <h3>Ervinha da boa</h3>
-                    <p>Providenciada por Caio's Rock industries, essa erva é perfeita para aqueles dias infelizes
-                    </p>
+                    <p>Providenciada por Caio's Rock industries, essa erva é perfeita para aqueles dias infelizes.</p>
                     <span>R$ 50,00</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 <div class="product-card">
                     <img src="../Imagens/Babosa.webp" alt="Babosa">
                     <h3>Babosa</h3>
-                    <p>Otima planta para uso capilar</p>
+                    <p>Ótima planta para uso capilar.</p>
                     <span>R$ 32,00</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 <div class="product-card">
                     <img src="../Imagens/Melaleuca.webp" alt="Melaleuca">
                     <h3>Melaleuca</h3>
-                    <p>Ótima opção para cuidados da pele</p>
+                    <p>Ótima opção para cuidados da pele.</p>
                     <span>R$ 45,00</span>
                     <button>Adicionar ao Carrinho</button>
                 </div>
                 <div class="product-card">
-                    <img src="https://via.placeholder.com/150" alt="Produto 4">
-                    <h3>Produto 4</h3>
-                    <p>Descrição do produto 4.</p>
-                    <span>R$ 25,00</span>
-                    <button>Adicionar ao Carrinho</button>
-                
+                    <a href="#" class="product-icon-link">
+                        <svg class="product-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
         </div>
@@ -71,4 +65,3 @@
     </footer>
 </body>
 </html>
-
