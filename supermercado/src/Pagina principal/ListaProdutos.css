@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E9EFEF;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #246814;
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilos do conteúdo principal */
+main {
+    padding: 3px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.produto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produto-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    position: relative; /* Permite o posicionamento absoluto dos filhos */
+    min-height: 250px; /* Define uma altura mínima para a card */
+    display: flex; /* Usa flexbox para o layout */
+    flex-direction: column; /* Organiza os itens em coluna */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+}
+
+.produto-card img {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    align-self: center; /* Centraliza a imagem horizontalmente */
+}
+
+.produto-card h3 {
+    margin: 10px 0;
+}
+
+.produto-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+.produto-card span {
+    font-weight: bold;
+    color: #542E71;
+}
+
+.produto-card button {
+    background-color: #246814; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de mão ao passar o mouse */
+    transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+    margin-top: auto; /* Empurra o botão para o fundo da card */
+}
+
+.produto-card button:hover {
+    background-color: #1b4d0a; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.product-icon-link {
+    position: absolute; /* Para ocupar todo o card */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Para centralizar o ícone */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Fundo sutil para o ícone */
+    border-radius: 8px; /* Para combinar com o card */
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Para herdar a cor do texto do card */
+}
+
+.product-icon {
+    width: 50px; /* Tamanho do ícone */
+    height: 50px; /* Tamanho do ícone */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+/* Efeito ao passar o mouse sobre o ícone */
+.product-icon-link:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Escurece o fundo ao passar o mouse */
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #246814;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; /* Fixa o rodapé na tela */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+}
