@@ -34,7 +34,7 @@ const ListaProdutos = () => {
   };
 
   const applypromocao = (id, desconto) => {
-    setProducts(produtos.map(produto => produto.id === id ? { ...produto, promocao: desconto } : produto));
+    setProdutos(produtos.map(produto => produto.id === id ? { ...produto, promocao: desconto } : produto));
   };
   
   return (
