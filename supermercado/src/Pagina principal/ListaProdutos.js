@@ -5,7 +5,7 @@ import './ListaProdutos.css'; // Importando o arquivo CSS
 
 const ListaProdutos = () => {
   const [produtos, setProdutos] = useState([
-    { id: 1, nome: 'Ervinha da boa', descricao: 'Essa erva é perfeita para aqueles dias infelizes', preco: 50, promocao: null },
+    { id: 1, nome: 'Babosa', descricao: 'Planta perfeita para uso capilar', preco: 50, promocao: null },
     { id: 2, nome: 'Produto 2', descricao: 'Descrição do produto 2.', preco: 20, promocao: null },
     { id: 3, nome: 'Produto 3', descricao: 'Descrição do produto 3.', preco: 15, promocao: null },
   ]);

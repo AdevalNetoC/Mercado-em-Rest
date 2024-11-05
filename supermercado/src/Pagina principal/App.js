@@ -12,7 +12,7 @@ function App() {
             <li><a href="#">Início</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="usuarios.html">Usuários</a></li>
-            <li><a href="login.html">Sair</a></li>
+            <li><a href="../Login e recuperar senha/login.html">Sair</a></li>
           </ul>
         </nav>
       </header>

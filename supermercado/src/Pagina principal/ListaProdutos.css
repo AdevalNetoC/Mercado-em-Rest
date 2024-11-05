@@ -138,6 +138,7 @@ h2 {
 /* Estilos do rodapé */
 footer {
     background-color: #246814;
+    width: 100%;
     color: white;
     text-align: center;
     padding: 10px 0;
