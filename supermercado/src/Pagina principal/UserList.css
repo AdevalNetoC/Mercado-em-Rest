@@ -1,0 +1,21 @@
+.user-list {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.user-list h1 {
+    text-align: center;
+}
+
+.user-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.user-list li {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
