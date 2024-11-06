@@ -1,5 +1,6 @@
 /* Profile.css */
 
+/* Container principal da página de perfil */
 .profile-container {
     max-width: 600px;
     margin: 0 auto;
@@ -10,27 +11,47 @@
     font-family: Arial, sans-serif;
 }
 
+/* Título da página */
 .profile-title {
     text-align: center;
     color: #333;
     margin-bottom: 20px;
 }
 
+/* Estilo das informações do perfil */
 .profile-info {
     margin-bottom: 20px;
     font-size: 16px;
     color: #555;
 }
 
+/* Parágrafos das informações */
 .profile-info p {
     margin-bottom: 10px;
 }
 
+/* Negrito para os rótulos das informações */
 .profile-info strong {
     color: #333;
 }
 
-.profile-edit-button {
+/* Formulário de edição */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo dos campos de entrada no formulário */
+.profile-form input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Botão de edição e salvar */
+.profile-edit-button, .profile-save-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -43,6 +64,16 @@
     margin-top: 20px;
 }
 
-.profile-edit-button:hover {
+/* Hover effect for buttons */
+.profile-edit-button:hover, .profile-save-button:hover {
     background-color: #45a049;
+}
+
+/* Estilo para o botão "Salvar" no formulário */
+.profile-save-button {
+    background-color: #007BFF;
+}
+
+.profile-save-button:hover {
+    background-color: #0056b3;
 }
