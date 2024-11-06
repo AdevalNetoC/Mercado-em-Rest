@@ -26,7 +26,7 @@ const App = () => {
                             <li><Link to="/user-list">Lista de Usuários</Link></li>
                             <li><Link to="/produtos">Lista de Produtos</Link></li>
                             <li>
-                                <Link to="/login" onClick={handleLogout}>Sair</Link>
+                                <Link to="/login" onClick={handleLogout}>Login</Link>
                             </li>
                         </ul>
                     </nav>
