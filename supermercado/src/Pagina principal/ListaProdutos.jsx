@@ -5,9 +5,9 @@ import './ListaProdutos.css'; // Importando o arquivo CSS
 
 const ListaProdutos = () => {
   const [produtos, setProdutos] = useState([
-    { id: 1, nome: 'Babosa', descricao: 'Planta perfeita para uso capilar', preco: 50, promocao: null },
-    { id: 2, nome: 'Produto 2', descricao: 'Descrição do produto 2.', preco: 20, promocao: null },
-    { id: 3, nome: 'Produto 3', descricao: 'Descrição do produto 3.', preco: 15, promocao: null },
+    { id: 1, nome: 'Feijão preto Qualitá', descricao: 'Feijão preto', preco: 20, promocao: null },
+    { id: 2, nome: 'Arroz Tio João', descricao: 'Arroz Branco', preco: 30, promocao: null },
+    { id: 3, nome: 'Nissin Lámen', descricao: 'Miojo sabor frango caipira', preco: 8, promocao: null },
   ]);
   
   const [novoProduto, setNovoProduto] = useState({ nome: '', descricao: '', preco: '' });
@@ -27,10 +27,6 @@ const ListaProdutos = () => {
     setNovoProduto({ nome: '', descricao: '', preco: '' });
   };
   
-  const updateProduto = (id, updatedInfo) => {
-    setProdutos(produtos.map(produto => produto.id === id ? { ...produto, ...updatedInfo } : produto));
-  };
-  
   const removeProduto = (id) => {
     setProdutos(produtos.filter(produto => produto.id !== id));
   };
@@ -47,7 +43,7 @@ const ListaProdutos = () => {
           <div key={produto.id} className="produto-card">
             <h3>{produto.nome}</h3>
             <p>{produto.descricao}</p>
-            <span>R$ {produto.promocao ? produto.preco * (1 - produto.promocao / 100) : produto.preco}</span>
+            <span>R$ {produto.promocao ? (produto.preco * (1 - produto.promocao / 100)).toFixed(2) : produto.preco.toFixed(2)}</span>
             <button onClick={() => removeProduto(produto.id)}>Remover</button>
             <button onClick={() => applyPromocao(produto.id, 10)}>Aplicar 10% de Desconto</button>
           </div>

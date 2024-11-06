@@ -1,0 +1,71 @@
+/* App.css */
+
+.App {
+    text-align: center;
+    
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Cor ao passar o mouse */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto; /* Margem superior para espaçamento */
+}
+
+footer {
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    bottom: 0;
+    width: 100%;
+    position: fixed; /* Fixa o rodapé na tela */
+    bottom: 0; /* Posiciona o rodapé na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    right: 0; /* Alinha à direita */
+    width: 100%; /* Largura total */
+    z-index: 1000; /* Garante que o rodapé fique acima de outros elementos */
+}
+
+footer {
+    position: fixed; /* Mantém o footer fixo na parte inferior */
+    bottom: 0; /* Alinha o footer na parte inferior da tela */
+    left: 0; /* Alinha o footer à esquerda */
+    right: 0; /* Alinha o footer à direita */
+    height: 30px; /* Altura do footer */
+    background-color: #f5f5f5; /* Cor de fundo do footer */
+    text-align: center; /* Centraliza o texto no footer */
+    padding: 10px; /* Espaçamento interno do footer */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional para o footer */
+    display: flex; /* Usando flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente o conteúdo no centro */
+    justify-content: center; /* Alinha horizontalmente o conteúdo no centro */
+}
+
+.main-content {
+    flex: 1; /* Allows the main content to grow and take available space */
+    padding-bottom: 60px; /* Adjust this value based on your footer height */
+}
